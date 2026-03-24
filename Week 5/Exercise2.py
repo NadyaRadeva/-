@@ -5,7 +5,6 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-# model (FIXED to match y2)
 def f(x):
     return 1/10 * sigmoid(c * sigmoid(a * x + b) + d) - 100
 
@@ -15,7 +14,6 @@ def MSE(x_values, y_values):
     return sum((y_values[i] - f(x_values[i]))**2 for i in range(n)) / n
 
 
-# derivatives
 def derivative_MSE_a(x_values, y_values):
     n = len(y_values)
     suma = 0
