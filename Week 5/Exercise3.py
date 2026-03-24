@@ -24,7 +24,6 @@ for i in range(101):
     ]
 
 
-# parameters (2x2 matrix)
 np.random.seed(0)
 W = np.random.randn(2, 2)
 
